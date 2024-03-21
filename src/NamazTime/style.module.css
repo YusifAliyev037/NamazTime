@@ -1,0 +1,31 @@
+.table{
+    background-color: rgba(0, 0, 0, 0.586);
+    padding: 20px;
+    border-radius:10px ;
+}
+
+.headtr{
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.bodytr{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+
+.input{
+    margin: 20px;
+    height: 30px;
+    width: 280px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+}
