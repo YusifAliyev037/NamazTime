@@ -20,7 +20,7 @@ function Namaz() {
 
     useEffect(() => {
         const fetchPrayerTimes = async () => {
-            const url = `http://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${cityParam}&country=Azerbaijan&method=`;
+            const url = `https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${cityParam}&country=Azerbaijan&method=`;
             try {
                 const response = await axios.get(url);
                 setPrayerTimes(response.data.data);
@@ -52,7 +52,7 @@ function Namaz() {
     function showPosition(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
-        const dateUrl = `http://api.aladhan.com/v1/timings/${parametrDate}?latitude=${latitude}&longitude=${longitude}`;
+        const dateUrl = `https://api.aladhan.com/v1/timings/${parametrDate}?latitude=${latitude}&longitude=${longitude}`;
 
         fetchPrayerDate(dateUrl);
     }
